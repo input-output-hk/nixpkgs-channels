@@ -21,7 +21,7 @@
 , langGo
 , langObjC
 , langObjCpp
-, langJit
+, langJit ? false
 }:
 
 assert cloog != null -> stdenv.lib.versionOlder version "5";
